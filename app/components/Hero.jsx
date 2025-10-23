@@ -69,7 +69,7 @@ export default function Hero() {
             </div>
 
             {/* Right Half - Different Color Background with Cards */}
-            <div className="w-full lg:w-1/2 min-h-[420px] sm:min-h-[480px] md:min-h-[550px] lg:min-h-screen relative overflow-hidden" style={{
+            <div className="w-full lg:w-1/2 min-h-[400px] sm:min-h-[480px] md:min-h-[550px]   relative overflow-hidden" style={{
                 background: 'linear-gradient(135deg, #492efcff 0%, #5b27f6ff 100%)'
             }}>
                 {/* Top Card - Coming from Left */}

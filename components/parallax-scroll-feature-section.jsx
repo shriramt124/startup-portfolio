@@ -147,17 +147,17 @@ export const Services = () => {
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.8 }}
-                      className="text-center mb-6">
-                      <h1 className='text-2xl md:text-4xl font-bold max-w-3xl mx-auto bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-600 bg-clip-text text-transparent leading-tight mb-2'>
+                      className="text-center mb-3 sm:mb-4 md:mb-6">
+                      <h1 className='text-lg sm:text-xl md:text-2xl lg:text-4xl font-bold max-w-3xl mx-auto bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-600 bg-clip-text text-transparent leading-tight mb-1 sm:mb-2'>
                           Our Services
                       </h1>
-                      <p className='text-sm text-gray-600 max-w-2xl mx-auto leading-relaxed'>
+                      <p className='text-xs sm:text-sm text-gray-600 max-w-2xl mx-auto leading-relaxed px-4'>
                           We won't just build what you ask for—we'll help you discover what you truly need.
                       </p>
                   </motion.div>
 
                   {/* Central Character with Floating Cards */}
-                  <div className="relative min-h-[450px] md:min-h-[500px] flex items-center justify-center mb-6">
+                  <div className="relative min-h-[320px] sm:min-h-[380px] md:min-h-[450px] lg:min-h-[500px] flex items-center justify-center mb-3 sm:mb-4 md:mb-6">
                       {/* Central Character Image */}
                       <motion.div
                           initial={{ opacity: 0, scale: 0.8 }}
@@ -170,7 +170,7 @@ export const Services = () => {
                                   alt="AI Character" 
                                   width={250} 
                                   height={250}
-                                  className="object-contain drop-shadow-2xl"
+                                  className="object-contain drop-shadow-2xl w-[180px] sm:w-[200px] md:w-[220px] lg:w-[250px] h-auto"
                               />
                               {/* Glow effect around character */}
                               <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 blur-3xl -z-10"></div>
@@ -185,9 +185,9 @@ export const Services = () => {
                           animate={{ opacity: 1, x: 0, y: 0 }}
                           transition={{ duration: 0.8, delay: 0.4 }}
                           className="absolute top-0 left-0 md:left-12 lg:left-20 z-10">
-                          <div className="bg-white rounded-xl shadow-lg border border-blue-100 p-3 w-40 hover:scale-105 transition-transform">
-                              <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center mb-1.5">
-                                  <Bot className="w-4 h-4 text-white" />
+                          <div className="bg-white rounded-xl shadow-lg border border-blue-100 p-2 sm:p-3 w-32 sm:w-36 md:w-40 hover:scale-105 transition-transform">
+                              <div className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center mb-1 sm:mb-1.5">
+                                  <Bot className="w-3 h-3 sm:w-3.5 sm:h-3.5 md:w-4 md:h-4 text-white" />
                               </div>
                               <h3 className="text-xs font-bold text-gray-900 mb-0.5">AI Agents</h3>
                               <p className="text-[10px] text-gray-600 leading-tight">Autonomous agents that handle complex tasks</p>
@@ -204,9 +204,9 @@ export const Services = () => {
                           animate={{ opacity: 1, x: 0, y: 0 }}
                           transition={{ duration: 0.8, delay: 0.5 }}
                           className="absolute top-0 right-0 md:right-12 lg:right-20 z-10">
-                          <div className="bg-white rounded-xl shadow-lg border border-purple-100 p-3 w-40 hover:scale-105 transition-transform">
-                              <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-pink-600 rounded-lg flex items-center justify-center mb-1.5">
-                                  <Workflow className="w-4 h-4 text-white" />
+                          <div className="bg-white rounded-xl shadow-lg border border-purple-100 p-2 sm:p-3 w-32 sm:w-36 md:w-40 hover:scale-105 transition-transform">
+                              <div className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-gradient-to-br from-purple-500 to-pink-600 rounded-lg flex items-center justify-center mb-1 sm:mb-1.5">
+                                  <Workflow className="w-3 h-3 sm:w-3.5 sm:h-3.5 md:w-4 md:h-4 text-white" />
                               </div>
                               <h3 className="text-xs font-bold text-gray-900 mb-0.5">N8N Automation</h3>
                               <p className="text-[10px] text-gray-600 leading-tight">Visual workflow automation & integration</p>
@@ -223,9 +223,9 @@ export const Services = () => {
                           animate={{ opacity: 1, x: 0 }}
                           transition={{ duration: 0.8, delay: 0.6 }}
                           className="absolute top-1/2 -translate-y-1/2 left-0 md:left-4 lg:left-8 z-10">
-                          <div className="bg-white rounded-xl shadow-lg border border-cyan-100 p-3 w-44 hover:scale-105 transition-transform">
-                              <div className="w-8 h-8 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-lg flex items-center justify-center mb-1.5">
-                                  <Brain className="w-4 h-4 text-white" />
+                          <div className="bg-white rounded-xl shadow-lg border border-cyan-100 p-2 sm:p-3 w-36 sm:w-40 md:w-44 hover:scale-105 transition-transform">
+                              <div className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-lg flex items-center justify-center mb-1 sm:mb-1.5">
+                                  <Brain className="w-3 h-3 sm:w-3.5 sm:h-3.5 md:w-4 md:h-4 text-white" />
                               </div>
                               <h3 className="text-xs font-bold text-gray-900 mb-0.5">Machine Learning</h3>
                               <p className="text-[10px] text-gray-600 leading-tight">Predictive models & pattern recognition</p>
@@ -242,9 +242,9 @@ export const Services = () => {
                           animate={{ opacity: 1, x: 0 }}
                           transition={{ duration: 0.8, delay: 0.7 }}
                           className="absolute top-1/2 -translate-y-1/2 right-0 md:right-4 lg:right-8 z-10">
-                          <div className="bg-white rounded-xl shadow-lg border border-green-100 p-3 w-44 hover:scale-105 transition-transform">
-                              <div className="w-8 h-8 bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg flex items-center justify-center mb-1.5">
-                                  <MessageSquare className="w-4 h-4 text-white" />
+                          <div className="bg-white rounded-xl shadow-lg border border-green-100 p-2 sm:p-3 w-36 sm:w-40 md:w-44 hover:scale-105 transition-transform">
+                              <div className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg flex items-center justify-center mb-1 sm:mb-1.5">
+                                  <MessageSquare className="w-3 h-3 sm:w-3.5 sm:h-3.5 md:w-4 md:h-4 text-white" />
                               </div>
                               <h3 className="text-xs font-bold text-gray-900 mb-0.5">AI Chatbots</h3>
                               <p className="text-[10px] text-gray-600 leading-tight">Intelligent conversational assistants</p>
@@ -261,9 +261,9 @@ export const Services = () => {
                           animate={{ opacity: 1, x: 0, y: 0 }}
                           transition={{ duration: 0.8, delay: 0.8 }}
                           className="absolute bottom-0 left-0 md:left-12 lg:left-24 z-10">
-                          <div className="bg-white rounded-xl shadow-lg border border-orange-100 p-3 w-40 hover:scale-105 transition-transform">
-                              <div className="w-8 h-8 bg-gradient-to-br from-orange-500 to-red-600 rounded-lg flex items-center justify-center mb-1.5">
-                                  <Cpu className="w-4 h-4 text-white" />
+                          <div className="bg-white rounded-xl shadow-lg border border-orange-100 p-2 sm:p-3 w-32 sm:w-36 md:w-40 hover:scale-105 transition-transform">
+                              <div className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-gradient-to-br from-orange-500 to-red-600 rounded-lg flex items-center justify-center mb-1 sm:mb-1.5">
+                                  <Cpu className="w-3 h-3 sm:w-3.5 sm:h-3.5 md:w-4 md:h-4 text-white" />
                               </div>
                               <h3 className="text-xs font-bold text-gray-900 mb-0.5">Computer Vision</h3>
                               <p className="text-[10px] text-gray-600 leading-tight">Image & video analysis automation</p>
@@ -280,9 +280,9 @@ export const Services = () => {
                           animate={{ opacity: 1, x: 0, y: 0 }}
                           transition={{ duration: 0.8, delay: 0.9 }}
                           className="absolute bottom-0 right-0 md:right-12 lg:right-24 z-10">
-                          <div className="bg-white rounded-xl shadow-lg border border-teal-100 p-3 w-40 hover:scale-105 transition-transform">
-                              <div className="w-8 h-8 bg-gradient-to-br from-teal-500 to-cyan-600 rounded-lg flex items-center justify-center mb-1.5">
-                                  <Network className="w-4 h-4 text-white" />
+                          <div className="bg-white rounded-xl shadow-lg border border-teal-100 p-2 sm:p-3 w-32 sm:w-36 md:w-40 hover:scale-105 transition-transform">
+                              <div className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-gradient-to-br from-teal-500 to-cyan-600 rounded-lg flex items-center justify-center mb-1 sm:mb-1.5">
+                                  <Network className="w-3 h-3 sm:w-3.5 sm:h-3.5 md:w-4 md:h-4 text-white" />
                               </div>
                               <h3 className="text-xs font-bold text-gray-900 mb-0.5">RPA Solutions</h3>
                               <p className="text-[10px] text-gray-600 leading-tight">Robotic process automation systems</p>
@@ -332,10 +332,10 @@ export const Services = () => {
                                {/* Title & Subtitle */}
                                <motion.div
                                    style={{ opacity: opacityContents[index] }}>
-                                   <h3 className="text-sm font-semibold text-blue-600 uppercase tracking-wide mb-2">
+                                   <h3 className="text-xs sm:text-sm font-semibold text-blue-600 uppercase tracking-wide mb-1 sm:mb-2">
                                        {section.subtitle}
                                    </h3>
-                                   <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                                   <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-3 sm:mb-4 md:mb-6">
                                        {section.title}
                                    </h2>
                                </motion.div>
@@ -343,18 +343,18 @@ export const Services = () => {
                                {/* Description */}
                                <motion.p
                                    style={{ opacity: opacityContents[index] }}
-                                   className="text-lg text-gray-600 leading-relaxed mb-8">
+                                   className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed mb-4 sm:mb-6 md:mb-8 px-2 sm:px-0">
                                    {section.description}
                                </motion.p>
 
                                {/* Features Grid */}
                                <motion.div
                                    style={{ opacity: opacityContents[index] }}
-                                   className="grid grid-cols-2 gap-3 mb-8">
+                                   className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 mb-4 sm:mb-6 md:mb-8 px-2 sm:px-0">
                                    {section.features.map((feature, idx) => (
-                                       <div key={idx} className="flex items-center gap-2 bg-white border border-gray-200 rounded-lg px-3 py-2">
-                                           <Zap className="w-4 h-4 text-blue-500 flex-shrink-0" />
-                                           <span className="text-sm font-medium text-gray-700">{feature}</span>
+                                       <div key={idx} className="flex items-center gap-2 bg-white border border-gray-200 rounded-lg px-2 sm:px-3 py-1.5 sm:py-2">
+                                           <Zap className="w-3 h-3 sm:w-4 sm:h-4 text-blue-500 flex-shrink-0" />
+                                           <span className="text-xs sm:text-sm font-medium text-gray-700">{feature}</span>
                                        </div>
                                    ))}
                                </motion.div>
