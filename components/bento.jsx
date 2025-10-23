@@ -6,15 +6,15 @@ import { motion } from "framer-motion";
 export default function FUIBentoGridDark() {
      return (
        <div
-         className="pt-32 container mx-auto min-w-full  flex flex-col p-10 bg-[#492efcff]">
-         <h1 className="font-geistMono tracking-tight text-3xl md:text-5xl text-white">
+         className="pt-16 sm:pt-20 md:pt-24 lg:pt-32 container mx-auto min-w-full flex flex-col p-4 sm:p-6 md:p-8 lg:p-10 bg-[#492efcff]">
+         <h1 className="font-geistMono tracking-tight text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-white">
            Our Blogs
          </h1>
-         <p className="max-w-3xl text-2xl/8 font-medium tracking-tight mt-2 bg-gradient-to-br from-black/90 to-black/80 bg-clip-text text-transparent from-black to-gray-400/20 dark:from-white dark:to-white/40">
+         <p className="max-w-3xl text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl/8 font-medium tracking-tight mt-1 sm:mt-2 bg-gradient-to-br from-black/90 to-black/80 bg-clip-text text-transparent from-black to-gray-400/20 dark:from-white dark:to-white/40 px-2 sm:px-0">
            Know more about your customers than they do.
          </p>
          <div
-           className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
+           className="mt-6 sm:mt-8 md:mt-10 lg:mt-16 grid grid-cols-1 gap-3 sm:gap-4 lg:grid-cols-6 lg:grid-rows-2">
            <BentoCard
              eyebrow="AI & Machine Learning"
              title="Building Intelligent AI Agents with GPT-4"
@@ -85,7 +85,7 @@ export default function FUIBentoGridDark() {
               "bg-black transform-gpu [border:1px_solid_rgba(255,255,255,.1)] [box-shadow:0_-20px_80px_-20px_#8686f01f_inset] shadow-sm ring-1 ring-white/10",
               "data-[dark]:bg-black data-[dark]:ring-white/15"
             )}>
-            <div className="relative h-[29rem] shrink-0 ">
+            <div className="relative h-[20rem] sm:h-[24rem] md:h-[26rem] lg:h-[29rem] shrink-0 ">
               {graphic}
               {fade.includes("top") && (
                 <div
@@ -97,14 +97,14 @@ export default function FUIBentoGridDark() {
               )}
             </div>
             <div
-              className="relative p-10  z-20 isolate mt-[-110px] h-[14rem] backdrop-blur-xl text-white ">
-              <h1>{eyebrow}</h1>
+              className="relative p-4 sm:p-6 md:p-8 lg:p-10 z-20 isolate mt-[-80px] sm:mt-[-90px] md:mt-[-100px] lg:mt-[-110px] h-[10rem] sm:h-[12rem] md:h-[13rem] lg:h-[14rem] backdrop-blur-xl text-white ">
+              <h1 className="text-xs sm:text-sm">{eyebrow}</h1>
               <p
-                className="mt-1 text-2xl/8 font-medium tracking-tight dark:text-gray-100 text-gray-150 group-data-[dark]:text-white">
+                className="mt-0.5 sm:mt-1 text-sm sm:text-lg md:text-xl lg:text-2xl/8 font-medium tracking-tight dark:text-gray-100 text-gray-150 group-data-[dark]:text-white leading-tight">
                 {title}
               </p>
               <p
-                className="mt-2 max-w-[600px] text-sm/6 text-gray-100 dark:text-gray-300 group-data-[dark]:text-gray-400">
+                className="mt-1 sm:mt-2 max-w-[600px] text-xs sm:text-sm/6 text-gray-100 dark:text-gray-300 group-data-[dark]:text-gray-400 leading-tight">
                 {description}
               </p>
             </div>
