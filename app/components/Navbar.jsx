@@ -16,6 +16,24 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const handleNavClick = (e, href) => {
+    e.preventDefault();
+    setIsMobileMenuOpen(false);
+    
+    const targetId = href.replace('#', '');
+    const targetElement = document.getElementById(targetId);
+    
+    if (targetElement) {
+      const navbarHeight = 64; // 4rem = 64px
+      const targetPosition = targetElement.offsetTop - navbarHeight;
+      
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   const navLinks = [
     { name: 'Home', href: '#home' },
     { name: 'Services', href: '#services' },
@@ -53,10 +71,11 @@ export default function Navbar() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8 lg:space-x-10">
             {navLinks.map((link, index) => (
-              <Link
+              <a
                 key={link.name}
                 href={link.href}
-                className="relative group"
+                onClick={(e) => handleNavClick(e, link.href)}
+                className="relative group cursor-pointer"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <span className={`text-sm lg:text-base font-medium transition-all duration-300 ${
@@ -68,7 +87,7 @@ export default function Navbar() {
                 </span>
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 group-hover:w-full transition-all duration-300 ease-out"></span>
                 <span className="absolute inset-0 -z-10 bg-white/5 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300 blur-sm"></span>
-              </Link>
+              </a>
             ))}
             
             {/* CTA Button */}
@@ -110,14 +129,14 @@ export default function Navbar() {
       >
         <div className="py-4 px-6 space-y-1 bg-gradient-to-br from-gray-900/98 via-purple-900/95 to-purple-800/95 backdrop-blur-2xl mx-4 mb-4 rounded-2xl border border-purple-500/20 shadow-2xl shadow-purple-500/20">
           {navLinks.map((link) => (
-            <Link
+            <a
               key={link.name}
               href={link.href}
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="block px-4 py-3 text-gray-300 hover:text-white hover:bg-white/10 rounded-lg transition-all duration-300"
+              onClick={(e) => handleNavClick(e, link.href)}
+              className="block px-4 py-3 text-gray-300 hover:text-white hover:bg-white/10 rounded-lg transition-all duration-300 cursor-pointer"
             >
               {link.name}
-            </Link>
+            </a>
           ))}
           <div className="px-4 pt-3">
             <button className="w-full px-6 py-3 bg-black text-white rounded-full font-medium text-sm shadow-lg hover:shadow-xl transition-all duration-300">

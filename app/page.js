@@ -21,15 +21,25 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <WhoWeAre />
-      <WhyChooseUs />
+      <section id="home">
+        <Hero />
+      </section>
+      <section id="about">
+        <WhoWeAre />
+        <WhyChooseUs />
+      </section>
       <TechStackSection />
-      <Services />
+      <section id="services">
+        <Services />
+      </section>
       {/* <Blogs /> */}
-      <Blogsmy />
+      <section id="portfolio">
+        <Blogsmy />
+      </section>
       <Testimonials />
-      <ContactUs />
+      <section id="contact">
+        <ContactUs />
+      </section>
       <TextPressureComp />
       <Footer />
     </>
