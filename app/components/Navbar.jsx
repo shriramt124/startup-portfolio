@@ -72,10 +72,9 @@ export default function Navbar() {
             ))}
             
             {/* CTA Button */}
-            <button className="relative px-6 lg:px-7 py-2 lg:py-2.5 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white rounded-full font-medium text-sm lg:text-base overflow-hidden group shadow-lg shadow-purple-500/30 hover:shadow-purple-500/50 transition-all duration-300">
-              <span className="relative z-10">Get Started</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <div className="absolute inset-0 bg-white/20 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+            <button className="relative px-6 lg:px-7 py-2 lg:py-2.5 bg-black text-white rounded-full font-medium text-sm lg:text-base overflow-hidden group shadow-lg hover:shadow-xl transition-all duration-300">
+              <span className="relative z-10">Let's Connect</span>
+              <div className="absolute inset-0 bg-gray-900 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </button>
           </div>
 
@@ -121,8 +120,8 @@ export default function Navbar() {
             </Link>
           ))}
           <div className="px-4 pt-3">
-            <button className="w-full px-6 py-3 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white rounded-full font-medium text-sm shadow-lg shadow-purple-500/40 hover:shadow-purple-500/60 transition-all duration-300">
-              Get Started
+            <button className="w-full px-6 py-3 bg-black text-white rounded-full font-medium text-sm shadow-lg hover:shadow-xl transition-all duration-300">
+              Let's Connect
             </button>
           </div>
         </div>
