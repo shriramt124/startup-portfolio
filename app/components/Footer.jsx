@@ -71,17 +71,17 @@ export default function Footer() {
                 </div>
                 <span>info@eficsy.com</span>
               </a>
-              <a href="tel:+1234567890" className="flex items-center gap-3 text-gray-200 hover:text-white transition-colors group">
+              <a href="tel:+919876543210" className="flex items-center gap-3 text-gray-200 hover:text-white transition-colors group">
                 <div className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center group-hover:bg-white/20 transition-colors">
                   <Phone className="w-5 h-5" />
                 </div>
-                <span>+1 (234) 567-890</span>
+                <span>+91 98765 43210</span>
               </a>
               <div className="flex items-center gap-3 text-gray-200">
                 <div className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center">
                   <MapPin className="w-5 h-5" />
                 </div>
-                <span>San Francisco, CA</span>
+                <span>Bangalore, India</span>
               </div>
             </div>
           </motion.div>
