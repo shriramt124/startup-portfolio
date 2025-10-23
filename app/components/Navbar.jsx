@@ -55,10 +55,10 @@ export default function Navbar() {
     >
       <div className="flex items-center h-16" style={{ width: '100%' }}>
         {/* Left Half - Aligned with Hero Content */}
-        <div className="flex items-center" style={{ width: '50%', paddingLeft: '4rem', paddingRight: '2rem' }}>
+        <div className="flex items-center w-1/2 px-4 sm:px-6 md:px-8 lg:px-16">
           {/* Logo - Left Side Only */}
           <Link href="/" className="flex items-center group relative z-10">
-            <span className={`text-2xl lg:text-3xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent transition-all duration-300 ${
+            <span className={`text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent transition-all duration-300 ${
               isScrolled ? 'drop-shadow-[0_0_8px_rgba(168,85,247,0.5)]' : ''
             }`}>
               Eficsy
@@ -67,9 +67,9 @@ export default function Navbar() {
         </div>
 
         {/* Right Half - Navigation Links */}
-        <div className="flex items-center justify-end" style={{ width: '50%', paddingRight: '4rem', paddingLeft: '2rem' }}>
+        <div className="flex items-center justify-end w-1/2 px-4 sm:px-6 md:px-8 lg:px-16">
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8 lg:space-x-10">
+          <div className="hidden lg:flex items-center space-x-6 xl:space-x-10">
             {navLinks.map((link, index) => (
               <a
                 key={link.name}
@@ -78,7 +78,7 @@ export default function Navbar() {
                 className="relative group cursor-pointer"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <span className={`text-sm lg:text-base font-medium transition-all duration-300 ${
+                <span className={`text-sm xl:text-base font-medium transition-all duration-300 ${
                   isScrolled 
                     ? 'text-gray-200 hover:text-white' 
                     : 'text-gray-300 hover:text-white'
@@ -91,7 +91,7 @@ export default function Navbar() {
             ))}
             
             {/* CTA Button */}
-            <button className="relative px-6 lg:px-7 py-2 lg:py-2.5 bg-black text-white rounded-full font-medium text-sm lg:text-base overflow-hidden group shadow-lg hover:shadow-xl transition-all duration-300">
+            <button className="relative px-4 xl:px-6 py-2 bg-black text-white rounded-full font-medium text-sm whitespace-nowrap overflow-hidden group shadow-lg hover:shadow-xl transition-all duration-300">
               <span className="relative z-10">Let's Connect</span>
               <div className="absolute inset-0 bg-gray-900 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </button>
@@ -100,7 +100,7 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden relative w-10 h-10 flex flex-col items-center justify-center focus:outline-none group"
+            className="lg:hidden relative w-10 h-10 flex flex-col items-center justify-center focus:outline-none group"
           >
             <span
               className={`w-6 h-0.5 bg-gray-300 transition-all duration-300 ${
@@ -123,7 +123,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden overflow-hidden transition-all duration-500 ${
+        className={`lg:hidden overflow-hidden transition-all duration-500 ${
           isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
         }`}
       >

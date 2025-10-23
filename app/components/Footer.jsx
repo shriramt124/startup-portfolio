@@ -45,9 +45,9 @@ export default function Footer() {
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-indigo-400/10 rounded-full blur-3xl"></div>
       </div>
 
-      <div className="container mx-auto px-6 lg:px-8 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Main Footer Content */}
-        <div className="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
+        <div className="py-8 sm:py-12 md:py-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 sm:gap-10 md:gap-12">
           {/* Brand Section */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -56,32 +56,32 @@ export default function Footer() {
             viewport={{ once: true }}
             className="lg:col-span-2"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-3 sm:mb-4">
               EFICSY
             </h2>
-            <p className="text-gray-200 mb-6 max-w-md leading-relaxed">
+            <p className="text-sm sm:text-base text-gray-200 mb-4 sm:mb-6 max-w-md leading-relaxed">
               Building innovative AI solutions and digital experiences that transform businesses and drive growth.
             </p>
             
             {/* Contact Info */}
-            <div className="space-y-3">
-              <a href="mailto:info@eficsy.com" className="flex items-center gap-3 text-gray-200 hover:text-white transition-colors group">
-                <div className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center group-hover:bg-white/20 transition-colors">
-                  <Mail className="w-5 h-5" />
+            <div className="space-y-2 sm:space-y-3">
+              <a href="mailto:info@eficsy.com" className="flex items-center gap-2 sm:gap-3 text-gray-200 hover:text-white transition-colors group">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-white/10 flex items-center justify-center group-hover:bg-white/20 transition-colors">
+                  <Mail className="w-4 h-4 sm:w-5 sm:h-5" />
                 </div>
-                <span>info@eficsy.com</span>
+                <span className="text-sm sm:text-base">info@eficsy.com</span>
               </a>
-              <a href="tel:+919876543210" className="flex items-center gap-3 text-gray-200 hover:text-white transition-colors group">
-                <div className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center group-hover:bg-white/20 transition-colors">
-                  <Phone className="w-5 h-5" />
+              <a href="tel:+919876543210" className="flex items-center gap-2 sm:gap-3 text-gray-200 hover:text-white transition-colors group">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-white/10 flex items-center justify-center group-hover:bg-white/20 transition-colors">
+                  <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
                 </div>
-                <span>+91 98765 43210</span>
+                <span className="text-sm sm:text-base">+91 98765 43210</span>
               </a>
-              <div className="flex items-center gap-3 text-gray-200">
-                <div className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center">
-                  <MapPin className="w-5 h-5" />
+              <div className="flex items-center gap-2 sm:gap-3 text-gray-200">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-white/10 flex items-center justify-center">
+                  <MapPin className="w-4 h-4 sm:w-5 sm:h-5" />
                 </div>
-                <span>Bangalore, India</span>
+                <span className="text-sm sm:text-base">Bangalore, India</span>
               </div>
             </div>
           </motion.div>
@@ -95,15 +95,15 @@ export default function Footer() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <h3 className="text-white font-semibold text-lg mb-4">{title}</h3>
-              <ul className="space-y-3">
+              <h3 className="text-white font-semibold text-base sm:text-lg mb-3 sm:mb-4">{title}</h3>
+              <ul className="space-y-2 sm:space-y-3">
                 {links.map((link) => (
                   <li key={link.name}>
                     <a
                       href={link.href}
-                      className="text-gray-200 hover:text-white transition-colors flex items-center gap-2 group"
+                      className="text-sm sm:text-base text-gray-200 hover:text-white transition-colors flex items-center gap-2 group"
                     >
-                      <ArrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
+                      <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
                       <span>{link.name}</span>
                     </a>
                   </li>
